@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Page article</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="/js/panier.js" defer></script>
+	<link href="/css/article-list.css" rel="stylesheet">
+</head>
+<body>
+	<div id="app">
+	<div class="articles-in-card">
+		<div class="items"
+		v-for="( article ,id) in items">
+			Code article : {{article.code}}<br>
+			Libellé : {{article.label}}<br>
+			Prix : {{article.prix}}
+			<button >Ajouter au panier</button>	
+		</div>
+		<button>commander</button>
+	</div>
+</div>
+</body>
+</html>
